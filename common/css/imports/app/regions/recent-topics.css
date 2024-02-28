@@ -1,0 +1,42 @@
+.recent-topics {
+  font-family: Arial, "Helvetica Neue", "Helvetica", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  font-size: 13px;
+}
+.recent-topics ul {
+  padding: 0;
+}
+.recent-topics li {
+  padding: 0 20px;
+}
+
+.recent-topics__title {
+  padding: 0 20px;
+  color: #008eed;
+  font-size: 17px;
+  font-weight: inherit;
+}
+
+a:hover .recent-topics__title {
+  text-decoration: underline;
+}
+
+.recent-topics__date {
+  color: #b0b3ba;
+  font-size: 11px;
+}
+
+.main .recent-topics__desc {
+  margin: 10px 0 0;
+  padding: 0 20px;
+  color: #4f525a;
+  font-size: 15px;
+  opacity: 0.8;
+  -webkit-transition: opacity .25 ease;
+  transition: opacity .25 ease;
+}
+
+a:hover .recent-topics__desc {
+  opacity: 1;
+}

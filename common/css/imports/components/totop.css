@@ -1,0 +1,94 @@
+#fixedMovePageTop {
+  position: fixed;
+  z-index: 4;
+}
+#fixedMovePageTop a {
+  display: block;
+  height: 0;
+  opacity: 0;
+}
+#fixedMovePageTop.fixed a {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+    #fixedMovePageTop {
+          bottom: 12px;
+          right: 50%;
+          margin-right: -512px;
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    #fixedMovePageTop {
+      bottom: 12px;
+      right: 12px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+/*    #fixedMovePageTop {
+        right: 50%;
+        margin-right: -504px;
+    }*/
+    #fixedMovePageTop.fixed a {
+      height: 48px;
+      -webkit-animation: fadeIn .25s cubic-bezier(.215, .61, .355, 1);
+      animation: fadeIn .25s cubic-bezier(.215, .61, .355, 1);
+    }
+    #fixedMovePageTop a {
+      width: 48px;
+      -webkit-animation: fadeOut .25s cubic-bezier(.215, .61, .355, 1);
+      animation: fadeOut .25s cubic-bezier(.215, .61, .355, 1);
+    }
+    #fixedMovePageTop a span {
+      display: block;
+      overflow: hidden;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+      white-space: nowrap;
+      text-indent: 100%;
+      background-image: url(../../../../../../jcb.sitecorecontenthub.cloud/api/public/content/icon_fixedpagetop.png%3b%20filename_%3dutf-8%27%27icon_fixedpagetop.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 48px 48px;
+    }
+
+    #fixedMovePageTop a:hover span {
+      background-image: url(../../../../../../jcb.sitecorecontenthub.cloud/api/public/content/icon_fixedpagetop-hover.png%3b%20filename_%3dutf-8%27%27icon_fixedpagetop-hover.png);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #fixedMovePageTop {
+        right: 10px;
+        bottom: 10px;
+    }
+    #fixedMovePageTop a {
+        width: 36px;
+        -webkit-animation: fadeOutSP .25s cubic-bezier(.215, .61, .355, 1);
+        animation: fadeOutSP .25s cubic-bezier(.215, .61, .355, 1);
+    }
+    #fixedMovePageTop.fixed a {
+        height: 36px;
+        -webkit-animation: fadeInSP .25s cubic-bezier(.215, .61, .355, 1);
+        animation: fadeInSP .25s cubic-bezier(.215, .61, .355, 1);
+    }
+    #fixedMovePageTop a span {
+        display: block;
+        overflow: hidden;
+        width: 36px;
+        height: 36px;
+        margin: 0 auto;
+        white-space: nowrap;
+        text-indent: 100%;
+        background-image: url(../../../../../../jcb.sitecorecontenthub.cloud/api/public/content/icon_fixedpagetop-sp.png%3b%20filename_%3dutf-8%27%27icon_fixedpagetop-sp.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+    }
+}
+

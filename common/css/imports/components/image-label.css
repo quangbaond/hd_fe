@@ -1,0 +1,26 @@
+.image-label {
+  line-height: 1;
+  padding-top: 20px;
+  position: relative
+}
+.image-label:before {
+  background: #5cb531;
+  color: #fff;
+  content: attr(data-label) " ";
+  display: inline-block;
+  font-size: 11px;
+  margin-bottom: 10px;
+  padding: 6px 13px;
+  white-space: nowrap;
+}
+
+.image-label.no-image:before {
+  content: ".";
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .image-label.no-image:before {
+    display: none;
+  }
+}
