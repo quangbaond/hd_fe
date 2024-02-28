@@ -1,0 +1,83 @@
+/* .logoBlock */
+.main .logoBlock {
+  width: 640px;
+  margin: 0 auto;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock {
+    width: auto;
+  }
+}
+
+.main .logoBlock > .blockIn {
+  display: table;
+  width: 100%;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock > .blockIn {
+    display: block;
+  }
+}
+
+.main .logoBlock > .blockIn > .picCol,
+.main .logoBlock > .blockIn > .txtCol {
+  display: table-cell;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock > .blockIn > .picCol,
+  .main .logoBlock > .blockIn > .txtCol {
+    display: block;
+  }
+}
+
+.main .logoBlock > .blockIn > .picCol {
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock > .blockIn > .picCol {
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+}
+
+.main .logoBlock > .blockIn > .picCol > .picture {
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .logoBlock > .blockIn > .txtCol {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.main .logoBlock > .blockIn > .txtCol > .title {
+  margin: 0 0 5px;
+  color: #2e323a;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock > .blockIn > .txtCol > .title {
+    text-align: center;
+  }
+}
+
+.main .logoBlock > .blockIn > .txtCol > .description {
+  margin: 0;
+  color: #7c7c85;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+@media(max-width: 767px) {
+  .main .logoBlock > .blockIn > .txtCol > .description {
+    text-align: center;
+  }
+}

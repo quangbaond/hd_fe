@@ -1,0 +1,166 @@
+.site-icon {
+  display: inline-block;
+  fill: none;
+  height: 24px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 24px;
+  stroke-width: 1;
+  stroke: currentColor;
+}
+
+.site-icon--expand {
+  height: 13px;
+  width: 13px;
+}
+
+#icon-expand__circle {
+  opacity: 0.4;
+}
+
+.site-icon--search {
+  height: 18px;
+  width: 18px;
+}
+
+.site-icon--pagetop {
+  height: 38px;
+  width: 38px;
+  padding: 12px;
+}
+.site-icon--pagetop:hover {
+  color: #999;
+}
+
+.site-icon--thick {
+  fill: none;
+  stroke-width: 2;
+}
+
+.site-icon--customer {
+  height: 36px;
+  width: 36px;
+}
+
+.site-icon--business {
+  height: 40px;
+  width: 40px;
+}
+
+.site-icon--merchants {
+  height: 37px;
+  width: 34px;
+}
+
+.site-icon--products {
+  height: 30px;
+  width: 40px;
+}
+
+.site-icon--press {
+  height: 32px;
+  width: 32px;
+}
+
+.site-icon--about {
+  height: 36px;
+  width: 36px;
+}
+
+.site-icon--globe {
+  height: 45px;
+  width: 45px;
+}
+
+.site-icon--card {
+  height: 34px;
+  width: 47px
+}
+
+.site-icon--fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+
+.site-icon--prefix {
+  margin-right: 1em;
+}
+
+.site-icon--suffix {
+  margin-left: .3em;
+}
+
+.site-icon--logo {
+  height: 14px;
+  width: 53px;
+}
+
+.site-icon--angle {
+  height: 10px;
+  width: 7px;
+}
+
+.site-icon--split-arrow {
+  height: 20px;
+  width: 16px;
+}
+
+.site-icon--chip {
+  height: 48px;
+  width: 50px;
+}
+
+.site-icon--security {
+  height: 34px;
+  width: 50px;
+}
+
+.site-icon--location {
+  height: 60px;
+  width: 40px;
+}
+
+.site-icon--thumbprint {
+  height: 62px;
+  width: 42px;
+}
+
+.site-icon--location2 {
+  height: 44px;
+  width: 34px;
+}
+
+.site-icon--notice {
+  height: 12px;
+  width: 12px;
+}
+
+.site-icon--acrobat {
+  height: 25px;
+  width: 20px;
+}
+
+.site-icon--airport {
+  stroke: #1abdd6;
+  height: 44px;
+  top: 0;
+  width: 44px;
+}
+
+.site-icon--airport path {
+  stroke-width: 1;
+}
+
+.site-icon--callout {
+  stroke: #5cb531
+}
+
+.site-icon--callout.site-icon--fill {
+  fill: #5cb531;
+  stroke: none;
+}
+.clear-text {
+  display: none;
+}
