@@ -1,0 +1,89 @@
+.container-chrome {
+  background: #008eed;
+  background: -webkit-linear-gradient(left, #008eed 0%,#0054af 100%);
+  background: linear-gradient(90deg, #008eed 0%,#0054af 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#008eed', endColorstr='#0054af', GradientType=1)";
+  color: #fff;
+  z-index: 9999;
+  position: relative;
+}
+
+.container-chrome-subtle {
+  background: #008eed;
+  background: -webkit-linear-gradient(left, #008eed 0%,#0070cd 100%);
+  background: linear-gradient(90deg, #008eed 0%,#0070cd 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#008eed', endColorstr='#0070cd', GradientType=1)";
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.container-nav {
+  background: -webkit-linear-gradient(60deg, #0078c7 0%, #004794 100%);
+  background: linear-gradient(30deg, #0078c7 0%, #004794 100%);
+  color: #fff;
+}
+
+.container-exclaim {
+  background: #1abdd6;
+  color: #fff;
+}
+
+.container-loud {
+  background: #1e2539;
+  color: #F7F7F7;
+}
+
+.container-quiet {
+  background: #f6f7fb;
+  color: #7c7c85;
+}
+
+.container-uniqueness {
+  background: url(../../../../images/bg_uniqueness_01.jpg) no-repeat 50%;
+  background-size: cover;
+}
+
+.main .cmnSection.container-login {
+  padding: 50px 0;
+  background: url(../../../../images/bg_emphasis_01.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #b6b6be;
+}
+
+@media (max-width: 767px) {
+  .main .cmnSection.container-login {
+    padding: 35px 33px;
+    background-image: url(../../../../images/bg_emphasis_03.jpg);
+  }
+}
+
+.container-darkblue {
+  background: url(../../../../images/bg_darkblue_01.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+.container-darkblue a {
+  color: #1abdd6;
+}
+
+.container-darkblue a:visited {
+  color: #1abdd6;
+}
+
+.container-gray {
+  background: url(../../../../images/bg_gray_01.jpg) no-repeat 50%;
+  background-size: cover;
+}
+
+.container-green {
+  background: url(../../../../images/masthead_apply_bg.png) no-repeat 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container-chrome {
+    min-width: 768px; /* ナビの長さによってこの数値は変動 */
+  }
+}

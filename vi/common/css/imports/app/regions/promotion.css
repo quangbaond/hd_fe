@@ -1,0 +1,11 @@
+.promotion {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 25px 0 40px
+}
+@media (min-width: 768px) {
+  .promotion{
+    font-size: 13px;
+    margin-bottom: 0
+  }
+  }

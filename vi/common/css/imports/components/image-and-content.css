@@ -1,0 +1,52 @@
+.image-and-content {
+  padding-top: 200px;
+  position: relative
+}
+@media (min-width: 768px) {
+  .image-and-content{
+    display: table;
+    padding-top: 0;
+    table-layout: fixed;
+    width: 100%
+  }
+  }
+
+.image-and-content__content {
+  padding: 33px
+}
+
+@media (min-width: 768px) {
+  .image-and-content__content{
+    display: table-cell;
+    padding: 60px;
+    vertical-align: middle;
+    width: 50%
+  }
+  }
+
+.image-and-content__image {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 185px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media (min-width: 768px) {
+  .image-and-content__image{
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table-cell;
+    position: static;
+    width: 50%
+  }
+  }
+
+.business-header
+.image-and-content__image {
+  background-image: url('../../../../images/business_header%402x.html');
+}
